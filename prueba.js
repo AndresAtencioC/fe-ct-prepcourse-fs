@@ -239,27 +239,177 @@
 
 // breakStatement(1)
 
-function continueStatement(num) {
+// function continueStatement(num) {
     // Iterar en un bucle aumentando en 2 el número recibido hasta un límite de 10 veces.
     // Guardar cada nuevo valor en un array y retornarlo.
     // Cuando el número de iteraciones alcance el valor 5, no se suma ese caso y
     // se continua con la siguiente iteración.
     // [PISTA]: utiliza el statement 'continue'.
     // Tu código:
-    var numAumentar = num
-    var arreglo = []
-    var iterador = 1
-    while (iterador < 11) {
-        if (iterador === 5) {
-            iterador +=1
-            continue
-        }
-        numAumentar = numAumentar + 2
-        arreglo.push(numAumentar)
-        iterador += 1
-    } console.log(arreglo)
-    return arreglo
+//     var numAumentar = num
+//     var arreglo = []
+//     var iterador = 1
+//     while (iterador < 11) {
+//         if (iterador === 5) {
+//             iterador +=1
+//             continue
+//         }
+//         numAumentar = numAumentar + 2
+//         arreglo.push(numAumentar)
+//         iterador += 1
+//     } console.log(arreglo)
+//     return arreglo
 
-}
+// }
 
-continueStatement(3)
+// continueStatement(3)
+
+// function agregarPropiedad(objeto, propiedad) {
+//     // Recibirás un objeto por parámetro.
+//     // Debes agregarle una propiedad con el nombre recibido por parámetro.
+//     // Esta propiedad será igual al valor `null`.
+//     // Retornar el objeto.
+//     // Tu código:
+//     prop = propiedad
+//     objeto[prop] = null
+//     console.log(objeto)
+//     return objeto
+//  }
+
+//  carros = {marca: ["Chevrolet", 'Mazda', 'Renault'], modelo: [2001, 2012,2004]}
+
+// console.log(carros)
+
+// agregarPropiedad(carros,'nothing')
+
+
+// function invocarMetodo(objeto, metodo) {
+//     // El parámetro "metodo" es un string que coincide con el nombre de una propiedad del objeto recibido.
+//     // Esta propiedad contiene una función en su interior. Debes invocarla/ejecutarla.
+//     // [NOTA]: no necesitar retornar nada.
+//     // Tu código:
+//     objeto[metodo]()
+
+// }
+
+// var misFunciones = {
+//     saludar: function(){
+//         console.log('Hola!')
+//     }
+// }
+
+// invocarMetodo(misFunciones, "saludar")
+
+// function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
+//     // El parámetro "objetoMisterioso" posee una propiedad con el nombre "numeroMisterioso".
+//     // Debes multiplicar este número por 5 y retornar el resultado.
+//     // Tu código:
+
+//     console.log(objetoMisterioso.numeroMisterioso * 5)
+//     return objetoMisterioso.numeroMisterioso * 5
+ 
+//  }
+
+// var deportes = {numeroMisterioso: 6}
+
+// console.log(deportes.numeroMisterioso)
+// multiplicarNumeroDesconocidoPorCinco(deportes)
+
+// function eliminarPropiedad(objeto, propiedad) {
+//     // El parámetro "propiedad" es una propiedad del objeto que recibes.
+//     // Debes eliminarla del objeto y retornarlo finalmente.
+//     // Tu código:
+//     prop = propiedad
+//     delete objeto[propiedad]
+//     console.log(objeto)
+
+// }
+// var deportes = {numeroMisterioso: 6, otro: 3}
+
+// eliminarPropiedad(deportes, 'numeroMisterioso')
+
+// function tieneEmail(objetoUsuario) {
+//     // Verifica si el "objetoUsuario", en su propiedad "email", posee un valor definido.
+//     // En ese caso retornar true. Caso contrario, false.
+//     // Tu código:
+//     if (objetoUsuario.email === undefined){
+//         console.log('No')
+//     }else console.log('Si')
+
+// }
+
+// var datosUsuario = {nombre: 'Andres', edad: 23, email: undefined}
+// console.log(datosUsuario)
+// tieneEmail(datosUsuario)
+
+// function pasarUsuarioAPremium(objetoMuchosUsuarios) {
+//     // El parámetro "objetoMuchosUsuarios" es un arreglo de objetos (usuarios).
+//     // Cada usuario tiene una propiedad llamada "esPremium".
+//     // Define esta propiedad de todos los usuarios como true.
+//     // Retornar el arreglo.
+//     // Tu código:
+//     for (var usuario = 0; usuario < objetoMuchosUsuarios.length; usuario++){
+//        objetoMuchosUsuarios[usuario].esPremium = true
+//     }
+//     console.log(objetoMuchosUsuarios)
+//     return objetoMuchosUsuarios
+//  }
+
+//  var arreglo = [{ esPremium: false }]
+
+// console.log(arreglo)
+// console.log('---------------------------------------------------------------------------------------------------------')
+// pasarUsuarioAPremium(arreglo)
+
+// function agregarMetodoCalculoDescuento(objetoProducto) {
+//     // Agrega una propiedad al "objetoProducto" con el nombre "calcularPrecioDescuento".
+//     // Esta propiedad debe ser una función que multiplique el precio del producto por el porcentajeDeDescuento.
+//     // El "objetoProducto" posee una propiedad "precio" y una propiedad "porcentajeDeDescuento".
+//     // Luego debes restar del precio total del producto ese valor de descuento.
+//     // Retornar el precio final.
+//     // Ejemplo:
+//     // Precio ---> 10
+//     // PorcentajeDeDescuento ---> 0.2
+//     // Precio final ---> 8
+//     // Tu código:
+//     objetoProducto.calcularPrecioDescuento = function calcula() {
+//             var resultado = this.precio - this.precio * this.porcentajeDeDescuento
+//             console.log(resultado)
+//             return resultado
+//     }
+//     objetoProducto.calcularPrecioDescuento()
+//     return objetoProducto
+
+// }
+
+// var computador = {
+//     precio: 40,
+//     porcentajeDeDescuento: 0.5,
+// }
+// const camara = {
+//     precio: 40,
+// }
+// console.log(camara)
+// camara.porcentajeDeDescuento = null
+// console.log(camara)
+// camara.porcentajeDeDescuento = 0.5
+
+// console.log(camara)
+// console.log('------------------------------------------------------------------------------------------------------')
+
+//agregarMetodoCalculoDescuento(computador)
+// agregarMetodoCalculoDescuento(camara)
+// console.log(camara)
+
+    // precio = objetoProducto.precio
+    // descuento = objetoProducto.porcentajeDeDescuento
+    // objeto = objetoProducto
+    // objeto['calcularPrecioDescuento'] = {
+    //     calcula: function () {
+    //         var resultado = precio - precio * descuento
+    //         console.log(resultado)
+    //         return resultado
+    //     }
+    // }
+    // objetoProducto.calcularPrecioDescuento.calcula()
+
